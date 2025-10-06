@@ -1,5 +1,5 @@
-import { ESidebar } from "@/@shared/components/ui/e-sidebar";
-import { EToggleTheme } from "@/@shared/components/ui/e-toggle-theme";
+import { ThemeToggle } from "@/providers/ThemeToggle";
+import { ESidebar, EToggleTheme } from "@/@shared/components/ui";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -12,10 +12,10 @@ export const Header = () => {
             <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
           </svg>
         </button>
-        <EToggleTheme />
+        <ThemeToggle />
         <div className="flex items-center gap-2">
           <div className="rounded-md px-2 py-0.5 text-xs md:text-sm">
-            <Image src="/assets/images/logo-corporate.png" alt="logo" width={40} height={40}/>
+            <Image src="/assets/images/logo-corporate.png" className="w-auto h-auto" alt="logo" width={40} height={40}/>
           </div>
         </div>
 
@@ -27,4 +27,5 @@ export const Header = () => {
          <ESidebar open={openSidebar} onClose={() => setOpenSidebar(false)} />
       </header>
       
-    );}
+    )};
+    

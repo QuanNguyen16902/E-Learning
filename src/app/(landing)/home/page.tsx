@@ -3,7 +3,6 @@ import { EBackToTop } from "@/@shared/components/ui";
 import { MainContent } from "./main-content";
 import { Footer } from "./footer";
 import { Header } from "./header";
-import { ESidebar } from "@/@shared/components/ui/e-sidebar";
 
 
 export default function MobileAuth() {

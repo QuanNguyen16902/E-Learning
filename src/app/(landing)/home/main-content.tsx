@@ -1,8 +1,5 @@
-import { EButton, ECard, ETextField } from "@/@shared/components/ui";
-import { About } from "./info/about";
-import { useState } from "react";
-import { Info } from "./info";
 import AuthSection from "./auth-section";
+import { Info } from "./info";
 
 export const MainContent = () => {
 

@@ -1,19 +1,9 @@
 "use client";
-import { EButton } from "@/@shared/components/ui/e-button";
-import { ECard } from "@/@shared/components/ui/e-card";
-import { ECheckbox } from "@/@shared/components/ui/e-checkbox";
-import { EChevron } from "@/@shared/components/ui/e-chevron";
-import { EDropdown } from "@/@shared/components/ui/e-dropdown";
-import { EInput } from "@/@shared/components/ui/e-input";
-import { ELabel } from "@/@shared/components/ui/e-label";
-import { EProductCard } from "@/@shared/components/ui/e-product-card";
-import { ERadio } from "@/@shared/components/ui/e-radio";
-import { EToggle } from "@/@shared/components/ui/e-toggle";
+import { ECard, ELabel, EInput, EDropdown, ECheckbox, ERadio, EToggle, EButton, EChevron, EProductCard } from "@/@shared/components/ui";
 import { useState } from "react";
 
 export default function Home() {
   const [name, setName] = useState("");
-  const [role, setRole] = useState("");
   const [dropdownValue, setDropdownValue] = useState("");
   const [selectValue, setSelectValue] = useState("");
   const [checkboxChecked, setCheckboxChecked] = useState(false);
@@ -98,7 +88,6 @@ export default function Home() {
     <EProductCard
     imageSrc="/assets/images/ai-data.png"
     imageAlt="AI & Data Science"
-    badge="Most Popular"
     title="AI & Data Science Degree"
     category={{ label: "Technology", onClick: () => console.log("go technology") }}
     description="Master the foundations of artificial intelligence and data analysis, and earn a globally recognized degree."
@@ -111,7 +100,16 @@ export default function Home() {
     />
 
       </ECard>
-      
+      <div className="bg-surface text-text border border-border-subtle rounded p-4">
+  <h3 className="text-brand">Title</h3>
+  <p className="text-muted">Description…</p>
+  <button className="mt-3 rounded px-3 py-2 bg-brand-400 text-white hover:bg-brand-600">
+    Action
+  </button>
+</div>
+
+<div className="bg-overlay-medium text-white p-4 rounded">Overlay / Medium</div>
+
     </div>
   );
 }

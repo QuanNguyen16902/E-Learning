@@ -1,5 +1,5 @@
 import { EButton, ECard, ECheckbox, ETextField } from "@/@shared/components/ui";
-import { EDivider } from "@/@shared/components/ui/e-divider";
+import { EDivider } from "@/@shared/components/ui/e-divider/e-divider";
 import { SocialButtons } from "./social-button";
 
 export const SignUpBlock = ({

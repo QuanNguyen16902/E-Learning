@@ -1,5 +1,4 @@
-import { ETextField, EButton, ECard } from "@/@shared/components/ui";
-import { EDivider } from "@/@shared/components/ui/e-divider";
+import { ETextField, EButton, ECard, EDivider } from "@/@shared/components/ui";
 import { SocialButtons } from "./social-button";
 
 export const SignInBlock = ({
@@ -26,6 +25,7 @@ export const SignInBlock = ({
       />
 
       <EButton
+        variant="primary"
         className="h-11 md:h-12 w-full"
         onClick={() => alert(`Sign in: ${email}`)}
       >
